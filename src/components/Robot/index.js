@@ -31,7 +31,7 @@ function Robot() {
       <div className='lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center overflow-hidden'>
         <div className='lg:col-start-2 md:pl-20'>
           <h4 className='text-2xl leading-8 font-extrabold text-gray-900 dark:text-white tracking-tight sm:leading-9'>
-            星座小圆 🤖️ 机器人
+            星座小圆机器人🤖️
           </h4>
           <ul>
             {
