@@ -33,7 +33,7 @@ function Header() {
               <a href='1' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>星座运势</a>
               <a href='1' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>玩图宇宙</a>
               <a href='1' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>TensorFlow小程序</a>
-              <a href='https://github.com/GeekYmm' target='view_window' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>GitHub</a>
+              <a href='https://github.com/yaun369' target='view_window' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>GitHub</a>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ function Header() {
             <h2 className='max-w-3xl text-xl sm:text-5xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2'>
               Service products, using technology to meet product claims
             </h2>
-            <div className='flex items-center justify-center mt-2 mb-20'>
+            <div className='flex items-center justify-center mt-2 mb-2'>
               <a href='#footer' className='uppercase py-2 my-2 px-4 md:mt-16 bg-transparent dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md'>
                 联系我们
               </a>
