@@ -40,7 +40,7 @@ function Robot() {
                   <li className='mt-10' key={index}>
                     <div className='flex'>
                       <div className='flex-shrink-0'>
-                        <div className='flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-b from-pink-600 to-purple-700 text-white'>
+                        <div className='flex items-center justify-center h-10 w-10 rounded-md bg-indigo-100 text-indigo-500'>
                           {(item.icon)}
                         </div>
                       </div>
@@ -60,7 +60,12 @@ function Robot() {
           </ul>
         </div>
         <div className='mt-10 -mx-4 md:-mx-12 lg:mt-0 lg:col-start-1'>
-          <img src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/robot-mock-up.png?imageMogr2/thumbnail/1500x1500' alt='illustration' className='mx-auto shadow-lg w-auto' />
+          <picture>
+            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/robot.webp?imageMogr2/thumbnail/600x600' media='(max-width: 400px)' />
+            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/robot.webp?imageMogr2/thumbnail/1000x1000' media='(max-width: 800px)' />
+            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/robot.webp?imageMogr2/thumbnail/1500x1500' media='(max-width: 1200px)' />
+            <img src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/robot.webp' alt='mockup' className='mx-auto w-auto' />
+          </picture>
         </div>
       </div>
     </section>
