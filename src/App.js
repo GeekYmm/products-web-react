@@ -3,6 +3,7 @@ import Robot from './components/Robot'
 import Footer from './components/Footer'
 import TensorFlow from './components/TensorFlow'
 import Wallpaper from './components/Wallpaper'
+import AIPhoto from './components/AIPhoto'
 import './App.css'
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <TensorFlow />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <Wallpaper />
+      <hr className='my-10 border-gray-200 dark:border-gray-700' />
+      <AIPhoto />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <Footer />
     </div>

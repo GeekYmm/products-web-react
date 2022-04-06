@@ -38,14 +38,14 @@ function TensorFlow() {
     }
   ]
   return (
-    <section id='tensorflow' className='relative bg-white dark:bg-gray-800 p-2'>
+    <section id='tensorflow' className='relative bg-white dark:bg-gray-800 px-2 py-10'>
       <div className='container px-6 mx-auto'>
         <h1 className='sm:text-2xl text-xl leading-8 sm:leading-9 font-extrabold text-gray-900 capitalize dark:text-white'>微信小程序中使用<span className='text-orange-400'>TensorFlow</span></h1>
         <picture>
-          <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow.webp?imageMogr2/thumbnail/600x600' media='(max-width: 400px)' />
-          <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow.webp?imageMogr2/thumbnail/1000x1000' media='(max-width: 800px)' />
-          <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow.webp?imageMogr2/thumbnail/1500x1500' media='(max-width: 1200px)' />
-          <img src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow.webp' alt='mockup' className='mt-10 lg:mt-0 lg:col-start-1' />
+          <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow-1.webp?imageMogr2/thumbnail/600x600' media='(max-width: 400px)' />
+          <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow-1.webp?imageMogr2/thumbnail/1000x1000' media='(max-width: 800px)' />
+          <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow-1.webp?imageMogr2/thumbnail/1500x1500' media='(max-width: 1200px)' />
+          <img src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/tensorflow-1.webp' alt='mockup' className='my-10 lg:col-start-1' />
         </picture>
         <div className='grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2'>
           {

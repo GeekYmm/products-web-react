@@ -64,9 +64,9 @@ function Wallpaper() {
         </div>
         <div className='mt-10 lg:mt-0 lg:col-start-2'>
           <picture>
-            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/600x600' media='(max-width: 400px)' />
-            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/1000x1000' media='(max-width: 800px)' />
-            <source srcset='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/1500x1500' media='(max-width: 1200px)' />
+            <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/600x600' media='(max-width: 400px)' />
+            <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/1000x1000' media='(max-width: 800px)' />
+            <source srcSet='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp?imageMogr2/thumbnail/1500x1500' media='(max-width: 1200px)' />
             <img src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/WebP/wallpaper.webp' alt='mockup' className='mx-auto w-auto object-cover' />
           </picture>
         </div>

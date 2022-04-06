@@ -7,7 +7,7 @@ function Header() {
   }
   return (
     <header>
-      <nav className='bg-white shadow dark:bg-gray-800'>
+      <nav className='fixed top-0 left-0 right-0 z-50 bg-white shadow dark:bg-gray-800'>
         <div className='container px-6 py-4 mx-auto'>
           <div className='lg:flex lg:items-center lg:justify-between'>
             <div className='flex items-center justify-between'>
@@ -32,14 +32,13 @@ function Header() {
               <a href='#robot' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>频道机器人</a>
               <a href='#tensorflow' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>TensorFlow小程序</a>
               <a href='#wallpaper' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>壁纸小程序</a>
-              <a href='#wallpaper' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>玩图宇宙</a>
-              <a href='1' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>星座运势</a>
+              <a href='#ai-photo' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>玩图宇宙</a>
               <a href='https://github.com/yaun369' target='view_window' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>GitHub</a>
             </div>
           </div>
         </div>
       </nav>
-      <div className='flex relative z-20 items-center'>
+      <div className='flex relative z-20 items-center pt-20'>
         <div className='container mx-auto px-6 flex flex-col justify-between items-center relative py-4'>
           <div className='flex flex-col'>
             <img className='rounded-full w-28 mx-auto' src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/avatar.png?imageMogr2/thumbnail/150x150' alt='avatar' />
