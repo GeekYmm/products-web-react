@@ -38,7 +38,7 @@ function Header() {
           </div>
         </div>
       </nav>
-      <div className='flex relative z-20 items-center pt-20'>
+      <div className='flex relative z-20 items-center pt-20 dark:bg-gray-800'>
         <div className='container mx-auto px-6 flex flex-col justify-between items-center relative py-4'>
           <div className='flex flex-col'>
             <img className='rounded-full w-28 mx-auto' src='https://star-1257061493.cos.ap-beijing.myqcloud.com/geekreading/avatar.png?imageMogr2/thumbnail/150x150' alt='avatar' />
