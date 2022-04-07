@@ -57,8 +57,10 @@ function TensorFlow() {
                       {item.icon}
                     </span>
                     <div className='mt-4 md:mx-4 md:mt-0'>
-                      <h1 className='text-xl font-medium text-gray-700 capitalize dark:text-white'>{item.title}</h1>
-                      <p className='mt-3 text-base text-gray-500 dark:text-gray-300'>
+                      <h5 className='text-lg leading-6 text-gray-900 dark:text-white font-bold'>
+                        {item.title}
+                      </h5>
+                      <p className='mt-2 text-base leading-6 text-gray-500 dark:text-gray-300'>
                         {item.desc}
                         {index === 3 && <a className='text-orange-500 hover:text-orange-400' href='https://github.com/yaun369/tensorflow-wxapp' target='view_window'>点击查看</a>}
                       </p>
