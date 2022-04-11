@@ -5,7 +5,6 @@ import TensorFlow from './components/TensorFlow'
 import Wallpaper from './components/Wallpaper'
 import AIPhoto from './components/AIPhoto'
 import Horoscope from './components/Horoscope'
-import './App.css'
 
 function App() {
   return (
@@ -18,9 +17,9 @@ function App() {
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <Wallpaper />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
-      <AIPhoto />
-      <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <Horoscope />
+      <hr className='my-10 border-gray-200 dark:border-gray-700' />
+      <AIPhoto />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <Footer />
     </div>

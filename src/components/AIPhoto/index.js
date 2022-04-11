@@ -2,7 +2,7 @@ function AIPhoto() {
   const list = [
     {
       title: '人像卡通化', desc: '使用 Taro 跨端框架开发，支持微信 QQ 小程序。上传人像图片实现卡通化效果。',
-      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='#2c3e50' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
         <path stroke='none' d='M0 0h24v24H0z' fill='none' />
         <path d='M18.816 13.58c2.292 2.138 3.546 4 3.092 4.9c-.745 1.46 -5.783 -.259 -11.255 -3.838c-5.47 -3.579 -9.304 -7.664 -8.56 -9.123c.464 -.91 2.926 -.444 5.803 .805' />
         <circle cx='12' cy='12' r='7' />
@@ -10,7 +10,7 @@ function AIPhoto() {
     },
     {
       title: '人像抠图', desc: '利用阿里视觉智能 API 实现一键人像祛除背景。',
-      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='#2c3e50' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
         <path stroke='none' d='M0 0h24v24H0z' fill='none' />
         <path d='M12 21a9.01 9.01 0 0 0 2.32 -.302a9.004 9.004 0 0 0 1.74 -16.733a9 9 0 1 0 -4.06 17.035z' />
         <path d='M12 3v17' />
@@ -23,7 +23,7 @@ function AIPhoto() {
     },
     {
       title: '替换天空', desc: '上传带天空的图片，并选择小程序提供的天空素材，实现天空替换效果。',
-      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='#2c3e50' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+      icon: <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
         <path stroke='none' d='M0 0h24v24H0z' fill='none' />
         <path d='M17.553 16.75a7.5 7.5 0 0 0 -10.606 0' />
         <path d='M18 3.804a6 6 0 0 0 -8.196 2.196l10.392 6a6 6 0 0 0 -2.196 -8.196z' />
@@ -47,7 +47,7 @@ function AIPhoto() {
                   <li className='mt-10' key={index}>
                     <div className='flex'>
                       <div className='flex-shrink-0'>
-                        <div className='flex items-center justify-center h-10 w-10 rounded-md bg-amber-100 text-amber-500'>
+                        <div className='flex items-center justify-center h-10 w-10 rounded-md bg-amber-100 text-amber-600'>
                           {(item.icon)}
                         </div>
                       </div>

@@ -38,7 +38,7 @@ function Horoscope() {
   })
 
   return (
-    <div className='overflow-hidden relative w-1/2 h-screen'>
+    <div id='horoscope' className='overflow-hidden relative w-1/2 h-screen'>
       {
         props.map(({ x, y, rot, scale }, i) => (
           <animated.div
