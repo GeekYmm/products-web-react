@@ -11,13 +11,13 @@ function App() {
     <div className='flex flex-col font-mono dark:bg-gray-800'>
       <Header />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
-      <Robot />
+      <Horoscope />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <TensorFlow />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
-      <Wallpaper />
+      <Robot />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
-      <Horoscope />
+      <Wallpaper />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
       <AIPhoto />
       <hr className='my-10 border-gray-200 dark:border-gray-700' />
