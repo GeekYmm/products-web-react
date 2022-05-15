@@ -49,9 +49,10 @@ function Header() {
             <h2 className='max-w-3xl text-xl sm:text-5xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2'>
               Service products, using technology to meet product claims
             </h2>
-            <div className='flex items-center justify-center mt-2 mb-2'>
-              <a href='#footer' className='uppercase py-2 my-2 px-4 md:mt-16 bg-transparent dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md'>
-                联系我们
+            <div className='flex w-40 items-center justify-center mt-4 mb-2 mx-auto rounded-lg shadow text-base font-medium text-white transition-colors duration-150 transform bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600'>
+              <a href='footer' className='inline-flex items-center justify-center px-5 py-3'>
+                <svg className='w-6 h-6' width='24' height='24' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='48' height='48' fill='white' fillOpacity='0.01' /><path d='M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44V44C28.9886 44 33.5507 42.1735 37.0539 39.1529' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /><path d='M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z' fill='none' stroke='#ffffff' strokeWidth='4' strokeLinejoin='round' /><path d='M32 24C32 27.3137 34.6863 30 38 30V30C41.3137 30 44 27.3137 44 24' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /><path d='M32 25V16' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /></svg>
+                <span className='ml-2'>联系我</span>
               </a>
             </div>
           </div>
