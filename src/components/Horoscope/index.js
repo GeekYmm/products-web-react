@@ -8,15 +8,29 @@ const from = _ => ({ x: 0, rot: 0, scale: 1.1, y: -10 })
 const trans = (r, s) => `perspective(2000px) rotateX(15deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 function Horoscope() {
+  const formatTime = (date, str) => {
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const day = date.getDate()
+    const hour = date.getHours()
+    const minute = date.getMinutes()
+    const second = date.getSeconds()
+    return [year, month, day].map(formatNumber).join(str);
+  }
+  const formatNumber = n => {
+    n = n.toString()
+    return n[1] ? n : '0' + n
+  }
+
   const [dataList, setDataList] = useState([])
   useEffect(() => {
     const getData = async () => {
+      const day = formatTime(new Date(), '')
       try {
-        const response = await fetch('https://wxapp.geekreading.cn/api/allstar?day=20200707')
+        const response = await fetch(`https://wxapp.geekreading.cn/api/allstar?day=${day}`)
         const res = await response.json()
         if (res.code !== 200) return
         res.data.data.map(ele => ele.icon = HoroscopeSvg(ele.type))
-        console.log(res.data.data)
         setDataList(res.data.data)
       } catch (error) {
         console.log(error)
