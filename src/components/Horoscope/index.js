@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from '@use-gesture/react'
 import HoroscopeSvg from './getSvgIcon'
+import config from '../../config'
+import md5 from '../../md5'
 
-const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
-const from = _ => ({ x: 0, rot: 0, scale: 1.1, y: -10 })
+const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 50 })
+const from = _ => ({ x: 0, rot: 0, scale: 1, y: 0 })
 const trans = (r, s) => `perspective(2000px) rotateX(15deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 function Horoscope() {
@@ -23,8 +25,10 @@ function Horoscope() {
         return n[1] ? n : '0' + n
       }
       const day = formatTime(new Date(), '')
+      const _ts = new Date().getTime()
+      const _sign = md5.make(config.appId + config.apiSecretKey + _ts)
       try {
-        const response = await fetch(`https://wxapp.geekreading.cn/api/allstar?day=${day}`)
+        const response = await fetch(`https://wxapp.geekreading.cn/api/allstar?day=${day}&_ts=${_ts}&_sign=${_sign}`)
         const res = await response.json()
         if (res.code !== 200) return
         res.data.data.map(ele => ele.icon = HoroscopeSvg(ele.type))
@@ -78,7 +82,7 @@ function Horoscope() {
                 style={{ transform: interpolate([rot, scale], trans) }}>
                 <div className='h-full select-none max-w-sm mx-auto overflow-hidden rounded-lg bg-white dark:bg-gray-800'>
 
-                  <div className='relative w-full h-60 bg-fixed bg-center bg-cover' style={{ backgroundImage: `url('https://star-1257061493.cos.ap-beijing.myqcloud.com/bot/constellation-pic/${dataList[i].type}.png')` }}>
+                  <div className='relative w-full h-60' style={{ backgroundImage: `url('https://star-1257061493.cos.ap-beijing.myqcloud.com/bot/constellation-pic/${dataList[i].type}.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className='absolute w-full bottom-0 flex items-center px-6 py-3 bg-gradient-to-b from-transparent to-black/20'>
                       {/* {dataList[i].icon} */}
                       <h1 className='text-sm font-semibold text-[#242154]'>{dataList[i].title}</h1>
@@ -86,7 +90,7 @@ function Horoscope() {
                   </div>
 
                   <div className='px-6 py-4'>
-                    <p className='py-2 text-gray-700 dark:text-gray-400'>
+                    <p className='py-2 text-sm md:text-base text-gray-700 dark:text-gray-400'>
                       <span className='font-semibold '>今日运势：</span>
                       {dataList[i]['星运解读']}
                     </p>
@@ -137,7 +141,7 @@ function Horoscope() {
               </a>
             </div>
             <div className='inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3 sm:mt-0'>
-              <a href='/' className='inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600'>
+              <a href='https://m.q.qq.com/a/s/da9f41b0b7f2b41384c7165ce6ff8f53' target='view_window' className='inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600'>
                 <svg className='w-6 h-6' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='24' height='24'>
                   <path d='M509.056 160a357.546667 357.546667 0 0 1 260.202667 111.872c116.906667-4.842667 197.866667 20.394667 218.965333 81.642667 17.002667 49.386667-13.184 106.453333-76.117333 162.581333l-9.429334 8.213333c-9.685333 8.192-20.053333 16.362667-31.04 24.469334l-5.674666 4.117333c-17.28 181.888-170.474667 324.181333-356.906667 324.181333-102.336 0-194.666667-42.88-259.989333-111.637333l-7.466667 0.277333c-111.573333 3.093333-191.765333-23.082667-212.074667-82.090666C8.96 624 54.165333 556.437333 144.213333 490.026667l7.893334-5.717334C169.386667 302.336 322.56 160 509.077333 160z m283.093333 440.106667l-14.293333 8.042666-14.101333 7.616-14.442667 7.530667-14.762667 7.424-15.104 7.338667-15.381333 7.232-15.722667 7.104-7.957333 3.52-20.202667 8.64-20.650666 8.448-16.810667 6.613333-17.066667 6.442667-8.597333 3.178666-17.429333 6.229334-8.789334 3.050666-17.6 5.952-17.514666 5.674667-17.429334 5.418667-17.301333 5.141333-25.749333 7.210667-21.205334 5.546666-20.949333 5.12-16.597333 3.797334-16.405334 3.498666-16.213333 3.242667-16 2.944-19.712 3.306667-11.861333 1.770666a293.205333 293.205333 0 0 0 172.757333 55.936c134.357333 0 247.701333-89.962667 283.093333-212.949333zM153.386667 564.373333l-0.789334 0.682667c-48.170667 41.301333-69.610667 77.333333-62.592 97.749333 6.144 17.813333 30.762667 29.845333 68.778667 35.541334l9.386667 1.258666c6.4 0.746667 13.162667 1.322667 20.224 1.749334l12.458666 0.554666a356.224 356.224 0 0 1-47.466666-137.536zM509.013333 224c-162.666667 0-294.528 131.861333-294.528 294.549333 0 68.117333 23.125333 130.837333 61.952 180.736l3.477334-0.32 13.845333-1.408 14.165333-1.664 14.506667-1.941333 14.784-2.218667 18.88-3.136 19.306667-3.541333 23.68-4.842667 16.085333-3.562666 24.490667-5.866667 16.576-4.266667 16.746666-4.544 16.874667-4.821333 8.512-2.517333 17.088-5.248 17.216-5.546667 17.301333-5.824 17.237334-6.058667c5.696-2.048 11.349333-4.138667 16.96-6.229333l16.725333-6.4 8.234667-3.242667 16.277333-6.613333 16-6.698667 15.68-6.848 19.136-8.704 18.624-8.853333 7.317333-3.562667 14.336-7.210666 13.973334-7.253334 13.589333-7.317333 13.226667-7.338667 12.8-7.402666 6.250666-3.690667 12.202667-7.402667 11.776-7.402666 3.242667-2.133334C803.114667 355.413333 671.424 224 509.056 224z m308.608 111.829333l3.136 5.461334a356.181333 356.181333 0 0 1 43.946667 131.861333l9.173333-7.850667 3.925334-3.498666 7.445333-6.933334c33.429333-32.064 49.301333-60.586667 42.453333-80.512-7.104-20.608-46.506667-35.712-110.08-38.528z' strokeWidth='4' fill='currentColor'></path>
                 </svg>
