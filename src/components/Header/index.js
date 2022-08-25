@@ -11,10 +11,11 @@ function Header() {
         <div className='container px-6 py-4 mx-auto'>
           <div className='lg:flex lg:items-center lg:justify-between'>
             <div className='flex items-center justify-between'>
-              <div className='text-xl font-semibold text-gray-700'>
+              <div className='flex flex-col'>
                 <a className='text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300' href='/'>
-                  GeekReading
+                  个人记录展示
                 </a>
+                <span className='text-sm text-gray-400'>GeekReading</span>
               </div>
 
               {/* <!-- Mobile menu button --> */}
