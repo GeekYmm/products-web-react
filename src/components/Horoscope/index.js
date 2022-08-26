@@ -69,7 +69,7 @@ function Horoscope() {
   }, { delay: 1000, filterTaps: true })
 
   return (
-    <section className='container flex flex-col lg:flex-row items-center py-10 lg:py-20 mx-auto w-full overflow-hidden'>
+    <section id='horoscope' className='container flex flex-col lg:flex-row items-center py-10 lg:py-20 mx-auto w-full overflow-hidden'>
       <section className='relative w-10/12 lg:w-1/2 h-[560px]'>
         {
           props.map(({ x, y, rot, scale }, i) => (

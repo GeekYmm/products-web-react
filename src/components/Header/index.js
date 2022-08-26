@@ -30,11 +30,11 @@ function Header() {
 
             {/* <!-- Mobile Menu open: 'block', Menu closed: 'hidden' --> */}
             <div className={`${menuStatus} -mx-4 lg:flex lg:items-center`}>
-              <a href='#robot' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>频道机器人</a>
+              <a href='#horoscope' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>星座运势</a>
               <a href='#tensorflow' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>TensorFlow小程序</a>
+              <a href='#robot' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>频道机器人</a>
               <a href='#wallpaper' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>壁纸小程序</a>
               <a href='#ai-photo' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>玩图宇宙</a>
-              <a href='#horoscope' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>星座运势</a>
               <a href='https://github.com/yaun369' target='view_window' className='block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'>GitHub</a>
             </div>
           </div>
@@ -51,7 +51,7 @@ function Header() {
               Service products, using technology to meet product claims
             </h2>
             <div className='flex w-40 items-center justify-center mt-4 mb-2 mx-auto rounded-lg shadow text-base font-medium text-white transition-colors duration-150 transform bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600'>
-              <a href='footer' className='inline-flex items-center justify-center px-5 py-3'>
+              <a href='#footer' className='inline-flex items-center justify-center px-5 py-3'>
                 <svg className='w-6 h-6' width='24' height='24' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='48' height='48' fill='white' fillOpacity='0.01' /><path d='M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44V44C28.9886 44 33.5507 42.1735 37.0539 39.1529' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /><path d='M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z' fill='none' stroke='#ffffff' strokeWidth='4' strokeLinejoin='round' /><path d='M32 24C32 27.3137 34.6863 30 38 30V30C41.3137 30 44 27.3137 44 24' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /><path d='M32 25V16' stroke='#ffffff' strokeWidth='4' strokeLinecap='round' strokeLinejoin='round' /></svg>
                 <span className='ml-2'>联系我</span>
               </a>
