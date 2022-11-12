@@ -13,6 +13,7 @@
     "@use-gesture/react": "10.2.11",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "/geekreading/web",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
